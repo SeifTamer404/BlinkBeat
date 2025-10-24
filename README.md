@@ -11,7 +11,8 @@ This project is part of a **learning journey** to practice advanced React concep
 ## Features
 
 - Minimal, focused UI for quick play sessions.
-- `useRef` for timer id and running-state to avoid extra renders.
+- `useRef` for showing the modal and displaying the player name.
+- `useImperativeHandle` for detaching the ResultModal component from the TimerChallenge component.  
 - Result modal rendered via `ReactDOM.createPortal` for clean layering.
 - Easy to extend with sounds, score tracking, or difficulty levels.
 
@@ -20,14 +21,6 @@ This project is part of a **learning journey** to practice advanced React concep
 - React (functional components + Hooks)
 - ReactDOM.createPortal
 - Plain CSS
-
-## Installation
-
-```bash
-git clone <repo-url>
-cd <project-folder>
-npm install
-# or
 yarn
 ```
 
